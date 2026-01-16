@@ -1,0 +1,30 @@
+import { WorkShift } from './workshift.entity';
+import { Role } from './role.entity';
+import { Order } from './order_tb.entity';
+import { ActivityLog } from './activity_log.entity';
+import { Branch } from './branches.entity';
+export declare class Staff {
+    id: number;
+    name: string;
+    gender: string;
+    birth: Date;
+    address: string;
+    phone: string;
+    workshifId: number;
+    workShift: WorkShift;
+    workHours: number;
+    salary: number;
+    minsalary: number;
+    typeStaff: string;
+    startDate: Date;
+    activeStatus: boolean;
+    password: string;
+    roleId: number;
+    roleEntity: Role;
+    role: string;
+    branchId: number;
+    image: string;
+    branch: Branch;
+    orders: Order[];
+    activityLogs: ActivityLog[];
+}
